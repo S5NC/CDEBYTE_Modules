@@ -40,6 +40,10 @@ Combinations:
 
 ![image](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/74910cef-1514-4055-ac13-488eea2cfde1)
 
+![image](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/634d9d97-510e-4f04-a75a-a12315e84147)
+
+<br>
+
 ![image](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/8fe10d7c-f471-4f48-aadc-c848f178b2fc)
 
 The black component parallel with the capacitor (10 uF) between GND and VCC has a very small marking, the number 5 is the clearest by far, the others may be scratches or something else. The resistance was too high for my multimeter, it had no capacitance, and no forward voltage drop in either direction. Perhaps it is ESD protection diode?
