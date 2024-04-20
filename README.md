@@ -34,6 +34,11 @@ Combinations:
 - When not doing either, save power by setting RXEN LOW and TXEN LOW.
 - Setting RXEN HIGH and TXEN HIGH is a bad idea, at best you waste power, at worst you damage the module's components. Never do this! Similarly, maybe it's best to leave a delay so the LNA can ramp down before turning the PA on, and leaving a delay so the PA can ramp down before turning the LNA on. It would be nice to be able to set the RF switch before enabling the LNA or PA, or a quick delay circuitry be in the module which does this, but I don't see this or a way to do so.
 
+F2U or the component in its place appears to serve the function of a power limiter as shown below
+
+![image](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/22a70c9c-92bb-4f72-bbdb-2522dd9bb022)
+
+
 ## E22-900M33S
 
 (I knocked the two top left components when taking the shield off which I then put back in their original orientation and position. I also very slightly rotated the LDO but did not move it back as it is negligible) 
