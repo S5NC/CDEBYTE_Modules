@@ -4,7 +4,19 @@ Unfortunately CDEBYTE do not give more details about their products when asked, 
 
 ![image](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/230e4d15-2500-4be6-bec5-a7c40f95e423)
 
-([Base image](https://user-images.githubusercontent.com/33201069/71768016-9e781800-2ecf-11ea-9d92-2d0c7f4ba9db.png), sourced from @faydr via [comment](https://github.com/faydr/QMesh/issues/1#issuecomment-570796411))
+([Base image (above)](https://user-images.githubusercontent.com/33201069/71768016-9e781800-2ecf-11ea-9d92-2d0c7f4ba9db.png), sourced from @faydr via [comment](https://github.com/faydr/QMesh/issues/1#issuecomment-570796411))
+
+<br>
+
+![image](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/cd312362-7e01-43c3-bce8-4b0544264d99)
+
+<br>
+<br>
+<br>
+
+![image](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/baa9dd1a-3d36-45f6-a791-8b8562e43813)
+
+[source (above)](https://ebyteiot.com/cdn/shop/files/E22_900M30S_10.png)
 
 To make the diagram I removed all SMD components are measured each SMD pad to see where each was connected, as there are internal layers.
 
