@@ -1,3 +1,5 @@
+# CDEBYTE module additional information
+
 ## E22-900M30S
 
 Unfortunately CDEBYTE do not give more details about their products when asked, and their documentation for this product is poor. I spent time reversing this module to find how the RF switching should be treated. (It is probably similar for the E220-900M30S, E22-400M30S, E22-900M33S, E22-900M33S, BUT I HAVE NOT CHECKED, I don't currently have other modules to sacrifice to open up and check. E22-400M22S/E22-900M22S/E220-900M22S module don't have LNA or PA)
