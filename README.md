@@ -36,6 +36,8 @@ Combinations:
 
 ## E22-900M33S
 
+(I knocked the two top left components when taking the shield off which I then put back in their original orientation and position. I also very slightly rotated the LDO but did not move it back as it is negligible) 
+
 ![image](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/74910cef-1514-4055-ac13-488eea2cfde1)
 
 ![image](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/8fe10d7c-f471-4f48-aadc-c848f178b2fc)
