@@ -1,4 +1,4 @@
-# CDEBYTE module additional information / custom application note
+# CDEBYTE module additional information / custom application notes
 
 ## E22-900M30S
 
