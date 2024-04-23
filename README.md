@@ -44,7 +44,6 @@ Combinations:
 
 [Results and information about the test](E22-900M30S%20power%20output%20testing.txt).
 
-
 ## E22-900M33S
 
 (I knocked the two top left components when taking the shield off which I then put back in their original orientation and position. I also very slightly rotated the LDO but did not move it back as it is negligible) 
