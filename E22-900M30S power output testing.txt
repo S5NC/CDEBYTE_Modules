@@ -1,0 +1,32 @@
+sniporbob's testing of SX1262 CONFIGURED Output Power Level (implicit dBm) vs E22-900M30S Output Power (dBm) using SIGLENT SA
+Tested 23/10/2023 on the Hydra board (custom DIY board) [https://github.com/Hydra-Designs/project-hydra-meshtastic-pcb].
+SX1262 is the chip used inside the E22-900M30S, and the thing which is communicated with using SPI.
+Maximum possible SX1262 output power configuration is +22 dBm, values above this are clamped by the firmware (and possibly by the SX1262 itself?)
+SX1262 can be configured to output power levels of 0 and below, but there were not tested (very limited applications which use sub 10mW output power, and in cases where output above +22 dBm is not needed, the E22-900M30S 1W module can be swapped for another less expensive one, or even a raw SX1262 or SX1261), SX1262's lowest output value is -9 dBm, values can be set in increments of 1 dBm.
+
+E22-900M30S only uses the last amplifier stage of the YP2233W.
+Output was measured at 906.875 MHz, the default frequency for the US region (as of testing).
+
+SX1262 conf    E22-900M30S output (dBm)    gain (calculated using previous two columns) (dB)
++1             +08.11                      +07.11
++2             +09.25                      +07.05
++3             +09.91                      +06.91
++4             +10.71                      +06.71
++5             +11.90                      +06.90
++6             +12.87                      +06.87
++7             +13.86                      +06.86
++8             +14.90                      +06.90
++9             +16.04                      +07.04
++10            +16.97                      +06.97
++11            +17.95                      +06.95
++12            +18.99                      +06.99
++13            +20.00                      +07.00
++14            +20.97                      +06.97
++15            +21.99                      +06.99
++16            +23.48                      +07.48
++17            +24.35                      +06.94
++18            +24.94                      +06.94
++19            +25.64                      +06.64
++20            +26.73                      +06.73
++21            +28.75                      +07.75
++22            +29.37                      +07.37
