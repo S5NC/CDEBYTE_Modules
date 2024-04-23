@@ -1,30 +1,35 @@
-# CDEBYTE module additional information / custom application notes
+# CDEBYTE module additional information / custom application notes and photos
 
 ## E22-900M30S
 
-Unfortunately CDEBYTE do not give more details about their products when asked, and their documentation for this product is poor. I spent time reversing this module to find how the RF switching should be treated. (It is probably similar for the E220-900M30S, E22-400M30S, E22-900M33S, E22-900M33S, BUT I HAVE NOT CHECKED, I don't currently have other modules to sacrifice to open up and check. E22-400M22S/E22-900M22S/E220-900M22S module don't have LNA or PA)
+Unfortunately CDEBYTE do not give more details about their products when asked, and their documentation for this product is poor, the documentation for the E22-900M33S is better but slightly contradictory in places. I spent time reversing this module to find how the RF switching should be treated. (It is PROBABLY similar for the E220-900M30S, E22-400M30S, E22-400M33S, BUT I HAVE NOT CHECKED, I don't currently have other modules to sacrifice to open up and check. E22-400M22S/E22-900M22S/E220-900M22S etc. don't have LNA or PA, generally E220 or MM modules use XTAL and not TCXO.)
 
-([Base image (below)](https://user-images.githubusercontent.com/33201069/71768016-9e781800-2ecf-11ea-9d92-2d0c7f4ba9db.png), [source](https://github.com/faydr/QMesh/issues/1#issuecomment-570796411))
+[Base image](https://user-images.githubusercontent.com/33201069/71768016-9e781800-2ecf-11ea-9d92-2d0c7f4ba9db.png) [source](https://github.com/faydr/QMesh/issues/1#issuecomment-570796411)
 
-![image](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/230e4d15-2500-4be6-bec5-a7c40f95e423)
-
-<br>
-
-![image](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/cd312362-7e01-43c3-bce8-4b0544264d99)
+![E22-900M30S photo top annotated](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/230e4d15-2500-4be6-bec5-a7c40f95e423)
 
 <br>
+
+Raw photos:
+
+![E22-900M30S photo top delidded](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/cd312362-7e01-43c3-bce8-4b0544264d99)
+
+![E22-900M30S photo bottom](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/5a9ee97e-10e3-4503-ae5b-af8c6dbd2525)
+
+
+<br>
 <br>
 <br>
 
-[source image (below)](https://ebyteiot.com/cdn/shop/files/E22_900M30S_10.png)
+[3D model source](https://ebyteiot.com/cdn/shop/files/E22_900M30S_10.png)
 
-![image](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/baa9dd1a-3d36-45f6-a791-8b8562e43813)
+![E22-900M30S 3D model top](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/baa9dd1a-3d36-45f6-a791-8b8562e43813)
 
 To make the diagram I removed all SMD components are measured each SMD pad to see where each was connected, as there are internal layers.
 
 F2U or the component in its place appears to serve the function of a power limiter as shown below
 
-![image](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/22a70c9c-92bb-4f72-bbdb-2522dd9bb022)
+![HSMP-3822 power limiter configuration](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/22a70c9c-92bb-4f72-bbdb-2522dd9bb022)
 
 ### RF switching
 
@@ -72,6 +77,6 @@ The RF switching process seems to be effectively the same as the E22-900M30S des
 
 I wonder if the isolation of the RF switch they use is enough for 33 dBm module. For example, PE4259 (this is the IC used in SX1262 reference design, I haven't checked which IC the one used by CDEBYTE is) says 29 dB minimum and 30 dB maximum isolation. If the LNA's absolute maximum input when not powered is exceeded, it would cause damage to it. This is also another reason not to have RXEN and TXEN high at the same time, no matter whether you are transmitting or receiving.
 
-## Improvements
+## Next steps
 
-Please create an issue or PR if you have additional information, or if you would like to fund the sacrifice of another CDEBYTE or Semtech-containing module.
+Please create an issue or PR if you would like to add additional information, or if you would like to fund the sacrifice of another CDEBYTE or SX126x-containing module.
