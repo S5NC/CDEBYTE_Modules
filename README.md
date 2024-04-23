@@ -4,7 +4,7 @@
 
 Unfortunately CDEBYTE do not give more details about their products when asked, and their documentation for this product is poor, the documentation for the E22-900M33S is better but slightly contradictory in places. I spent time reversing this module to find how the RF switching should be treated. (It is PROBABLY similar for the E220-900M30S, E22-400M30S, E22-400M33S, BUT I HAVE NOT CHECKED, I don't currently have other modules to sacrifice to open up and check. E22-400M22S/E22-900M22S/E220-900M22S etc. don't have LNA or PA, generally E220 or MM modules use XTAL and not TCXO.)
 
-[Base image](https://user-images.githubusercontent.com/33201069/71768016-9e781800-2ecf-11ea-9d92-2d0c7f4ba9db.png) and [source](https://github.com/faydr/QMesh/issues/1#issuecomment-570796411)
+Annotated image's [base image](https://user-images.githubusercontent.com/33201069/71768016-9e781800-2ecf-11ea-9d92-2d0c7f4ba9db.png) and [base image source](https://github.com/faydr/QMesh/issues/1#issuecomment-570796411)
 
 ![E22-900M30S photo top annotated](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/230e4d15-2500-4be6-bec5-a7c40f95e423)
 
