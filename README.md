@@ -16,12 +16,9 @@ Raw photos:
 
 ![E22-900M30S photo bottom](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/5a9ee97e-10e3-4503-ae5b-af8c6dbd2525)
 
-
-<br>
-<br>
 <br>
 
-[3D model source](https://ebyteiot.com/cdn/shop/files/E22_900M30S_10.png)
+[3D model photo source](https://ebyteiot.com/cdn/shop/files/E22_900M30S_10.png)
 
 ![E22-900M30S 3D model top](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/baa9dd1a-3d36-45f6-a791-8b8562e43813)
 
@@ -51,27 +48,29 @@ Combinations:
 
 ## E22-900M33S
 
+Raw photos:
+
 (I knocked the two top left components when taking the shield off which I then put back in their original orientation and position. I also very slightly rotated the LDO but did not move it back as it is negligible) 
 
-![image](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/74910cef-1514-4055-ac13-488eea2cfde1)
+![E22-900M33S photo top delidded top illumination](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/74910cef-1514-4055-ac13-488eea2cfde1)
 
-![image](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/634d9d97-510e-4f04-a75a-a12315e84147)
+![E22-900M33S photo bottom](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/634d9d97-510e-4f04-a75a-a12315e84147)
 
 <br>
 
-![image](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/8fe10d7c-f471-4f48-aadc-c848f178b2fc)
+![E22-900M33S photo top delidded rear illumination](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/8fe10d7c-f471-4f48-aadc-c848f178b2fc)
 
-The black component parallel with the capacitor (10 uF) between GND and VCC has a very small marking, the number 5 is the clearest by far, the others may be scratches or something else. The resistance was too high for my multimeter, it had no capacitance, and no forward voltage drop in either direction. Perhaps it is ESD protection diode?
+The black component parallel with the capacitor (10 uF) between GND and VCC has a very small marking, the number 5 is the clearest by far, the others may be scratches or something else. The resistance was too high for my multimeter, it had no capacitance, and no forward voltage drop in either direction, but this may just be that I didn't place my multimeter probes correctly or the component's leads were damaged when I removed the shield. I think it is a TVS diode for ESD protection.
 
-![image](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/3ff66040-a5be-4cbc-959d-14e82f0394a7)
+![Input TVS diode and capacitor](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/3ff66040-a5be-4cbc-959d-14e82f0394a7)
 
 This is the LDO which has unclear marking in the other photos
 
-![image](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/a3afb698-8927-4625-8f99-81271d663c54)
+![LDO S2WJ](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/a3afb698-8927-4625-8f99-81271d663c54)
 
-PA is probably ZD1061 or ZDH1061. Marking ZD1061 AP294500 2138
+PA is ZDH1061. Marking ZD1061 AP294500 ZD1061 AP294500 213**8** or 213**6**?
 
-![image](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/0ba50c9f-b0c1-4370-a8b3-4b9ff29be422)
+![ZD1061 AP294500 2138](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/0ba50c9f-b0c1-4370-a8b3-4b9ff29be422)
 
 The RF switching process seems to be effectively the same as the E22-900M30S described above.
 
