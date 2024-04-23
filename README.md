@@ -16,7 +16,6 @@ Raw photos:
 
 ![E22-900M30S photo bottom](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/dc9b09b3-fb54-44f6-ac13-8a01dff959ef)
 
-
 <br>
 
 [3D model photo source](https://ebyteiot.com/cdn/shop/files/E22_900M30S_10.png)
