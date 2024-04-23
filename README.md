@@ -14,7 +14,8 @@ Raw photos:
 
 ![E22-900M30S photo top delidded](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/cd312362-7e01-43c3-bce8-4b0544264d99)
 
-![E22-900M30S photo bottom](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/5a9ee97e-10e3-4503-ae5b-af8c6dbd2525)
+![E22-900M30S photo bottom](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/dc9b09b3-fb54-44f6-ac13-8a01dff959ef)
+
 
 <br>
 
@@ -52,13 +53,13 @@ Raw photos:
 
 (I knocked the two top left components when taking the shield off which I then put back in their original orientation and position. I also very slightly rotated the LDO but did not move it back as it is negligible) 
 
-![E22-900M33S photo top delidded top illumination](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/74910cef-1514-4055-ac13-488eea2cfde1)
+![E22-900M33S photo top delidded rear illumination](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/8fe10d7c-f471-4f48-aadc-c848f178b2fc)
 
 ![E22-900M33S photo bottom](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/634d9d97-510e-4f04-a75a-a12315e84147)
 
-<br>
+![E22-900M33S photo top delidded top illumination](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/74910cef-1514-4055-ac13-488eea2cfde1)
 
-![E22-900M33S photo top delidded rear illumination](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/8fe10d7c-f471-4f48-aadc-c848f178b2fc)
+<br>
 
 The black component parallel with the capacitor (10 uF) between GND and VCC has a very small marking, the number 5 is the clearest by far, the others may be scratches or something else. The resistance was too high for my multimeter, it had no capacitance, and no forward voltage drop in either direction, but this may just be that I didn't place my multimeter probes correctly or the component's leads were damaged when I removed the shield. I think it is a TVS diode for ESD protection.
 
@@ -76,6 +77,6 @@ The RF switching process seems to be effectively the same as the E22-900M30S des
 
 I wonder if the isolation of the RF switch they use is enough for 33 dBm module. For example, PE4259 (this is the IC used in SX1262 reference design, I haven't checked which IC the one used by CDEBYTE is) says 29 dB minimum and 30 dB maximum isolation. If the LNA's absolute maximum input when not powered is exceeded, it would cause damage to it. This is also another reason not to have RXEN and TXEN high at the same time, no matter whether you are transmitting or receiving.
 
-## Next steps
+## Improvements / Next steps
 
 Please create an issue or PR if you would like to add additional information, or if you would like to fund the sacrifice of another CDEBYTE or SX126x-containing module.
