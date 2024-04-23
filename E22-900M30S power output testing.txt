@@ -1,11 +1,13 @@
 sniporbob's testing of SX1262 CONFIGURED Output Power Level (implicit dBm) vs E22-900M30S Output Power (dBm) using SIGLENT SA
-Tested 23/10/2023 on the Hydra board (custom DIY board) [https://github.com/Hydra-Designs/project-hydra-meshtastic-pcb].
+Tested 23/10/2023 on the Hydra board (custom DIY board) [https://github.com/Hydra-Designs/project-hydra-meshtastic-pcb] with Meshtastic firmware.
 SX1262 is the chip used inside the E22-900M30S, and the thing which is communicated with using SPI.
-Maximum possible SX1262 output power configuration is +22 dBm, values above this are clamped by the firmware (and possibly by the SX1262 itself?)
+Maximum possible SX1262 output power configuration is +22 dBm, values above this are clamped by the Meshastic firmware (and possibly by the SX1262 itself?)
 SX1262 can be configured to output power levels of 0 and below, but there were not tested (very limited applications which use sub 10mW output power, and in cases where output above +22 dBm is not needed, the E22-900M30S 1W module can be swapped for another less expensive one, or even a raw SX1262 or SX1261), SX1262's lowest output value is -9 dBm, values can be set in increments of 1 dBm.
 
 E22-900M30S only uses the last amplifier stage of the YP2233W.
 Output was measured at 906.875 MHz, the default frequency for the US region (as of testing).
+In this test, RadioLib was used via Meshtastic. I believe it is effectively paDutyCycle 0x04, hpMax 0x07, deviceSel 0x00, paLut 0x01, Value in SetTxParams is the value in the column "SX1262 conf". I don't think RadioLib uses optimal power settings for each confiured SX1262 output power. Anyway, the output power should be the same or very close, mainly only the effeciency would be impacted.
+During the transmissing period, TXEN was driven high to 3.3 V, RXEN was driven low to 0 V, by the Meshtastic firmware via RadioLib.
 
 SX1262 conf    E22-900M30S output (dBm)    gain (calculated using previous two columns) (dB)
 +1             +08.11                      +07.11
