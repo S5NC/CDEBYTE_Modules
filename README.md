@@ -68,7 +68,7 @@ This is the LDO which has unclear marking in the other photos
 
 ![LDO S2WJ](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/a3afb698-8927-4625-8f99-81271d663c54)
 
-PA is ZDH1061. Marking ZD1061 AP294500 ZD1061 AP294500 213**8** or 213**6**?
+PA is ZDH1061 - [datasheet](ZDH1061%20v1.2.1.pdf). Marking ZD1061 AP294500 ZD1061 AP294500 213**8** or 213**6**?
 
 ![ZD1061 AP294500 2138](https://github.com/S5NC/CDEBYTE_Modules/assets/145265251/0ba50c9f-b0c1-4370-a8b3-4b9ff29be422)
 
