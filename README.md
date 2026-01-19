@@ -1,5 +1,20 @@
 # CDEBYTE module additional information / custom application notes and photos
 
+## Comparison
+
+### RF Frontend Components
+
+|  | ANT→LNA | LNA | LNA→SX1262 | SX1262→PA | PA | PA→ANT |
+|---|---|---|---|---|---|---|
+| [E22-400M30S](https://www.cdebyte.com/products/E22-400M30S) | PIN diode | [NXP BFU520](https://www.nxp.com/products/radio-frequency-rf/legacy-rf/legacy-rf-wideband-transistors/npn-wideband-silicon-rf-transistor:BFU520) | - | - | [Innotion YP2233W](http://www.innotion.com.cn/Product-details?product_id=162) | - |
+| [E22-900M30S](https://www.cdebyte.com/products/E22-900M30S) | PIN diode | NXP BFU520 | - | - | Innotion YP2233W | - |
+| [E22-400M33S](https://www.cdebyte.com/products/E22-400M33S) | PIN diode | NXP BFU520 | - | - | [Cemax ZDH1061](https://www.cemaxrf.com/56/809) | - |
+| [E22-900M30S](https://www.cdebyte.com/products/E22-900M33S) | PIN diode | NXP BFU520 | - | - | Cemax ZDH1061 | - |
+| [E22P-868M30S](https://www.cdebyte.com/products/E22P-868M30S) | ? | ? | ? | ? | ? | ? |
+| [E22P-915M30S](https://www.cdebyte.com/products/E22P-915M30S) | SAW BPF ([BZSF SF9883](https://www.bjzxsf.com.cn/meter/p-40-10.html)) → PIN diode | [KCT KCT8102L](https://kxcomtech.com/en/application/info/1776) (FEM) | SAW BPF (BZSF SF9883) | SAW BPF (BZSF SF9883) | KCT KCT8102L (FEM) | Ceramic LPF |
+
+*Note: PIN diode (series pair to GND) clamping curve starts at around +5 dB signal (IL ≈ -3.5 dB).*
+
 ## E22-900M30S
 
 Unfortunately CDEBYTE do not generally give details further than their sparse datasheet about their products even when requested, provide no module schematics, and their documentation for this product is poor, so the module cannot be understood fully. The documentation for the E22-900M33S is better but slightly contradictory in places. I spent time reversing this module to find how the RF switching should be treated. (It is PROBABLY similar for the E220-900M30S, E22-400M30S, E22-400M33S, BUT I HAVE NOT CHECKED, I don't currently have other modules to sacrifice to open up and check. E22-400M22S/E22-900M22S/E220-900M22S etc. don't have LNA or PA, generally E220 or MM modules use XTAL and not TCXO.) CDEBYTE should ideally provide this information themselves, it is unnecessary work to reverse their product to find out how to best use it...
